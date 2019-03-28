@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FST-BRK</title>
+    <link rel="stylesheet" type="text/css" href="newstyle.css">
+    <!--  
+    <link rel="stylesheet" type="text/css" href="mobile_responsive_main_display_425.css">
+    <link rel="stylesheet" type="text/css" href="mobile_responsive_game_buttons_425.css">
+
+    <link rel="stylesheet" type="text/css" href="mobile_responsive_main_display_375.css">
+    <link rel="stylesheet" type="text/css" href="mobile_responsive_game_buttons_375.css">
+
+    <link rel="stylesheet" type="text/css" href="main_game_view.css">
+    <link rel="stylesheet" type="text/css" href="main_button_view.css">
+    -->
+
+    <!--Game Art-->
+    <link rel="stylesheet" type="text/css" href="game_art.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body">
+    <div class="main_container">
+        <div class="nav" id="nav-container">
+            <!----------------------------------------------------------->
+            <div class="index-container">
+                <a href="index.html" class="logo"> FST BRK </a>
+            </div>
+            <!----------------------------------------------------------->
+            <div class="menu-nav">
+                <ul>
+                    <li><a href="gallery.html"> Gallery </a></li>
+                    <li><a href="about.html"> About </a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!---------------------------------------------------------------------------------------->
+        <!-- Begin game button-->
+        <div id="start_container">
+            <button id="Play" class="start_button"> Play Now ! </button>
+        </div>
+
+        <div id="game_buttons">
+            <div id="offensive_button_container"></div>
+            <div id="defensive_button_container"></div>
+        </div>
+
+        <!--Game Move Actions-->
+        <div id="user_move"></div>
+        <div id="computer_move"></div>
+        <div id="match_response"></div>
+        <div id="response_container"></div>
+        <!------------------------------------------------------------------------------------------->
+        <div class="main_game_container">
+            <!------------------------------------------------------------------------------------------->
+
+            <!--Characters-->
+            <div id="user_character"></div>
+            <div id="computer_character"></div>
+            <div id="court_select"></div>
+
+            <!------------------------------------------------------------------------------------------->
+            <!-- score-->
+            <div id="user_score"></div>
+            <div id="computer_score"></div>
+            <div id="gameOver"></div>
+            <!----------------------character and court art-------------------------------------->
+
+            <img id="userArt">
+            <img id="computerArt">
+
+            <div id="user_Character_Art"></div>
+            <div id="computer_Character_Art"></div>
+            <div id="background_art"></div>
+            <!---------------------------------------------------------------------------------------->
+            <!----------------------------------------------------------------------------------------->
+            <!-- Game button containers-->
+
+
+            <div id="match_response"></div>
+        </div>
+
+        <!-- Selection headers-->
+        <div id="head_title">
+            <div id="user_character_header_container"></div>
+            <div id="computer_character_header_container"></div>
+            <div id="court_selection_header_container"></div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------->
+        <!--Character buttons-->
+        <div id="character_button_container">
+            <div id="user_character_button_container"></div>
+            <div id="computer_character_button_container"></div>
+            <div id="court_buttons_container"></div>
+        </div>
+
+        <!---------------------------------------------------------------------------------------->
+        <!-- Random buttons-->
+        <div id="random_court_container">
+            <div id="random_user_button"></div>
+            <div id="random_computer_button"></div>
+            <div id="random_court_button"></div>
+        </div>
+
+        <!----------------------------------------------------------------------------------------->
+        <!--reset game-->
+        <div id="game_reset"></div>
+
+        <!--<div id="footer">Ian Kimble</div>-->
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+    <script src="./script3.js"></script>
+
+    </div>
+</body>
+
+</html>
