@@ -199,7 +199,7 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #ffff80;
 }
-#random_courtId{
+#randomCourtId{
     border: 2px solid orangered;
     padding: 8px  312px;
     margin: 10px;
@@ -274,7 +274,7 @@ color:#ffb3b3;
 border: 3px solid #990000;
 }
 
-#game_reset{
+#gameReset{
     grid-column: 1; 
     grid-row: 3;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -499,7 +499,7 @@ border: 3px solid #990000;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         background-color: #ffff80;
     }
-    #random_courtId{
+    #randomCourtId{
         border: 2px solid orangered;
         padding: 5px  12px;
         margin: 40px;
@@ -574,7 +574,7 @@ border: 3px solid #990000;
     border: 3px solid #990000;
     }
     
-    #game_reset{
+    #gameReset{
         grid-column: 1; 
         grid-row: 3;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
