@@ -58,32 +58,32 @@ function jumpball() {
     };
 };
 function toggleswitch() {
-    $("#offensive_button_container, #defensive_button_container").toggle();
+    $("#offensiveButtonContainer, #defensiveButtonContainer").toggle();
 };
 function stopGameforUser() {
     if (userScore > 5) {
        // $("#user").html("!!! CONGRATULATIONS YOU WIN !!!")
         //console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        $("#computer_score").hide();
-        $("#user_score").hide();
-        $("#offensive_button_container").hide();
-        $("#defensive_button_container").hide();
-        $("#user_move").hide();
-        $("#computer_move").hide();
-        $("#match_response").hide();
+        $("#computerScore").hide();
+        $("#userScore").hide();
+        $("#offensiveButtonContainer").hide();
+        $("#defensiveButtonContainer").hide();
+        $("#userMove").hide();
+        $("#computerMove").hide();
+        $("#matchResponse").hide();
         $("#gameOver").text("Congratulations! You win!");
         /*
         var rematchButton = document.createElement("button");
         var text = document.createTextNode("Rematch");
         rematchButton.appendChild(text);
-        document.getElementById("game_reset").append(rematchButton);
+        document.getElementById("gameReset").append(rematchButton);
         rematchButton.setAttribute("id", "rematchGame");
         rematchGame();
         */
         var newGameButton = document.createElement("button");
         var text = document.createTextNode("Play again");
         newGameButton.appendChild(text);
-        document.getElementById("game_reset").append(newGameButton);
+        document.getElementById("gameReset").append(newGameButton);
         newGameButton.setAttribute("id", "newGame");
         newGame();
     }
@@ -92,13 +92,13 @@ function stopGameforComputer() {
     if (computerScore > 5) {
        // $("#user").html("!!! OH NO YOU LOSE !!!")
         //console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        $("#computer_score").hide();
-        $("#user_score").hide();
-        $("#offensive_button_container").hide();
-        $("#defensive_button_container").hide();
-        $("#user_move").hide();
-        $("#computer_move").hide();
-        $("#match_response").hide();
+        $("#computerScore").hide();
+        $("#userScore").hide();
+        $("#offensiveButtonContainer").hide();
+        $("#defensiveButtonContainer").hide();
+        $("#userMove").hide();
+        $("#computerMove").hide();
+        $("#matchResponse").hide();
         $("#gameOver").text("Sorry, you lose");
         /*
         var rematchButton = document.createElement("button");
@@ -111,7 +111,7 @@ function stopGameforComputer() {
         var newGameButton = document.createElement("button");
         var text = document.createTextNode("Play again");
         newGameButton.appendChild(text);
-        document.getElementById("game_reset").append(newGameButton);
+        document.getElementById("gameReset").append(newGameButton);
         newGameButton.setAttribute("id", "newGame");
         newGame();
 
@@ -121,7 +121,7 @@ function userScoreboard() {
 
     //counter++;
     //$("#user_score").html("User score: " + userScore++)
-    $("#user_score").text( userScore++);
+    $("#userScore").text( userScore++);
     //userScore++;
     console.log(userScore);
     stopGameforUser();
@@ -130,93 +130,93 @@ function computeScoreboard() {
 
     //counter++;
     //$("#computer_score").html("Computer score: "+ computerScore++)
-    $("#computer_score").text(computerScore++);
+    $("#computerScore").text(computerScore++);
     //computerScore++;
     console.log(computerScore);
     stopGameforComputer();
 };
-function offensive_buttons() {
+function offensiveButtons() {
     var shootButton = document.createElement("button");
     var text = document.createTextNode("Shoot");
     shootButton.appendChild(text);
-    document.getElementById("offensive_button_container").append(shootButton);
+    document.getElementById("offensiveButtonContainer").append(shootButton);
     shootButton.setAttribute("id", "shootId");
 
     var crossoverButton = document.createElement("button");
     var text = document.createTextNode("Cross Over");
     crossoverButton.appendChild(text);
-    document.getElementById("offensive_button_container").append(crossoverButton);
+    document.getElementById("offensiveButtonContainer").append(crossoverButton);
     crossoverButton.setAttribute("id", "crossoverId");
 
     var passButton = document.createElement("button");
     var text = document.createTextNode("Pass");
     passButton.appendChild(text);
-    document.getElementById("offensive_button_container").append(passButton);
+    document.getElementById("offensiveButtonContainer").append(passButton);
     passButton.setAttribute("id", "passtId");
 
 };
-function defensive_buttons() {
+function defensiveButtons() {
     var blockButton = document.createElement("button");
     var text = document.createTextNode("Block");
     blockButton.appendChild(text);
-    document.getElementById("defensive_button_container").append(blockButton);
+    document.getElementById("defensiveButtonContainer").append(blockButton);
     blockButton.setAttribute("id", "blockId");
 
     var lockdownButton = document.createElement("button");
     var text = document.createTextNode("Lockdown");
     lockdownButton.appendChild(text);
-    document.getElementById("defensive_button_container").append(lockdownButton);
+    document.getElementById("defensiveButtonContainer").append(lockdownButton);
     lockdownButton.setAttribute("id", "lockdownId");
 
     var stealButton = document.createElement("button");
     var text = document.createTextNode("Steal");
     stealButton.appendChild(text);
-    document.getElementById("defensive_button_container").append(stealButton);
+    document.getElementById("defensiveButtonContainer").append(stealButton);
     stealButton.setAttribute("id", "stealId");
 
 };
 function gameScript2() {
     console.log("script 2is linked");
-    $("#court_selection_header_container").hide();
-    $("#court_buttons_container").hide();
-    $("#random_court_button").hide();
-    $("#user_score").text(userCharacter + "00" );
-    $("#computer_score").text(computerCharacter + "00 ");
+    $("#courtSelectionHeaderContainer").hide();
+    $("#courtButtonsContainer").hide();
+    $("#randomCourtButton").hide();
+    $("#userScore").text(userCharacter + "00" );
+    $("#computerScore").text(computerCharacter + "00 ");
 
     var shootButton = document.createElement("button");
     var text = document.createTextNode("Shoot");
     shootButton.appendChild(text);
-    document.getElementById("offensive_button_container").append(shootButton);
+    document.getElementById("offensiveButtonContainer").append(shootButton);
     shootButton.setAttribute("id", "shootId");
 
     var crossoverButton = document.createElement("button");
     var text = document.createTextNode("Cross Over");
     crossoverButton.appendChild(text);
-    document.getElementById("offensive_button_container").append(crossoverButton);
+    document.getElementById("offensiveButtonContainer").append(crossoverButton);
     crossoverButton.setAttribute("id", "crossoverId");
 
     var passButton = document.createElement("button");
     var text = document.createTextNode("Pass");
     passButton.appendChild(text);
-    document.getElementById("offensive_button_container").append(passButton);
+    document.getElementById("offensiveButtonContainer").append(passButton);
     passButton.setAttribute("id", "passId");
 
     var blockButton = document.createElement("button");
     var text = document.createTextNode("Block");
     blockButton.appendChild(text);
-    document.getElementById("defensive_button_container").append(blockButton);
+    document.getElementById("defensiveButtonContainer").append(blockButton);
     blockButton.setAttribute("id", "blockId");
 
     var lockdownButton = document.createElement("button");
     var text = document.createTextNode("Lockdown");
     lockdownButton.appendChild(text);
-    document.getElementById("defensive_button_container").append(lockdownButton);
+    document.getElementById("defensiveButtonContainer").append(lockdownButton);
     lockdownButton.setAttribute("id", "lockdownId");
 
     var stealButton = document.createElement("button");
     var text = document.createTextNode("Steal");
     stealButton.appendChild(text);
-    document.getElementById("defensive_button_container").append(stealButton);
+    document.getElementById("defensiveButtonContainer").append(stealButton);
     stealButton.setAttribute("id", "stealId");
 
     jumpball();
@@ -232,24 +232,24 @@ function gameScript2() {
         console.log("Computer did: " + computerMove);
         if (computerMove == defVal[0]) {
             console.log("lose")
-            $("#match_response").text("Lose: Your shot was blocked. It happens to the best of us.")
-            $("#user_move").text("Shoot")
-            $("#computer_move").text(computerMove)
+            $("#matchResponse").text("Lose: Your shot was blocked. It happens to the best of us.")
+            $("#userMove").text("Shoot")
+            $("#computerMove").text(computerMove)
             toggleswitch();
             computeScoreboard();
         }
         else if (computerMove == defVal[2]) {
             console.log("win")
-            $("#match_response").text("Win: Your opponent attempted to steal but you shot it right in there face")
-            $("#user_move").text("Shoot")
-            $("#computer_move").text(computerMove)
+            $("#matchResponse").text("Win: Your opponent attempted to steal but you shot it right in there face")
+            $("#userMove").text("Shoot")
+            $("#computerMove").text(computerMove)
             userScoreboard();
         }
         else {
             console.log("draw")
-            $("#match_response").text("Draw: Your opponent put the locks down. This might be tough.")
-            $("#user_move").text("Shoot")
-            $("#computer_move").text(computerMove)
+            $("#matchResponse").text("Draw: Your opponent put the locks down. This might be tough.")
+            $("#userMove").text("Shoot")
+            $("#computerMove").text(computerMove)
         }
     });
     // Crossover
@@ -262,16 +262,16 @@ function gameScript2() {
         console.log("Computer did:"+computerMove);
         if(computerMove == defVal[0]){
             console.log("win")
-        $("#match_response").text("Win: Your opponent bit on the crossover. Good move!")
-        $("#user_move").text("Crossover")
-        $("#computer_move").text(computerMove)
+        $("#matchResponse").text("Win: Your opponent bit on the crossover. Good move!")
+        $("#userMove").text("Crossover")
+        $("#computerMove").text(computerMove)
             userScoreboard()
             
         }
         else{ console.log("lose")
-         $("#match_response").text("Lose: Your opponent saw the crossover coming. Try again.")
-         $("#user_move").text("Crossover")
-         $("#computer_move").text(computerMove)
+         $("#matchResponse").text("Lose: Your opponent saw the crossover coming. Try again.")
+         $("#userMove").text("Crossover")
+         $("#computerMove").text(computerMove)
             toggleswitch();
             computeScoreboard();
         }
@@ -286,24 +286,24 @@ function gameScript2() {
         console.log("Computer did:"+computerMove);
         if(computerMove == defVal[0]){
             console.log("win")
-        $("#match_response").text("Win: You got the ball to the open man. Good court vision.")
-        $("#user_move").text("Pass")
-        $("#computer_move").text(computerMove)
+        $("#matchResponse").text("Win: You got the ball to the open man. Good court vision.")
+        $("#userMove").text("Pass")
+        $("#computerMove").text(computerMove)
             userScoreboard();
         }
         else if(computerMove == defVal[2]){
             console.log("lose")
-        $("#match_response").text("Lose: Your opponent read the play and stole the ball. Keep going.")
-        $("#user_move").text("Pass")
-        $("#computer_move").text(computerMove)
+        $("#matchResponse").text("Lose: Your opponent read the play and stole the ball. Keep going.")
+        $("#userMove").text("Pass")
+        $("#computerMove").text(computerMove)
             toggleswitch();
             computeScoreboard();
         }
         else{ 
             console.log("draw");
-        $("#match_response").text("Draw: Your opponent is locked in. It won't be that easy.")
-        $("#user_move").text("Pass")
-        $("#computer_move").text(computerMove)
+        $("#matchResponse").text("Draw: Your opponent is locked in. It won't be that easy.")
+        $("#userMove").text("Pass")
+        $("#computerMove").text(computerMove)
         }
     });
 
@@ -321,17 +321,17 @@ function gameScript2() {
 
         if (computerMove == offVal[0]) {
             console.log("win");
-            $("#match_response").text("Win: You beat that shot up! Let them know you're not the one.")
-            $("#user_move").text("Block")
-            $("#computer_move").text(computerMove)
+            $("#matchResponse").text("Win: You beat that shot up! Let them know you're not the one.")
+            $("#userMove").text("Block")
+            $("#computerMove").text(computerMove)
             userScoreboard();
             toggleswitch();
         }
         else {
             console.log("lose");
-            $("#match_response").text("Lose: Your opponent is just too fast. Keep up!")
-            $("#user_move").text("Block")
-            $("#computer_move").text(computerMove)
+            $("#matchResponse").text("Lose: Your opponent is just too fast. Keep up!")
+            $("#userMove").text("Block")
+            $("#computerMove").text(computerMove)
 
             computeScoreboard();
         }
@@ -350,24 +350,24 @@ function gameScript2() {
         
         if(computerMove == offVal[0]){
             console.log("draw");
-             $("#match_response").text("Draw: Good defense. Now to convert!")
-             $("#user_move").text("Lockdown")
-             $("#computer_move").text(computerMove)
+             $("#matchResponse").text("Draw: Good defense. Now to convert!")
+             $("#userMove").text("Lockdown")
+             $("#computerMove").text(computerMove)
             
         }
         else if(computerMove == offVal[1]){
             toggleswitch();
             console.log("win");
-             $("#match_response").text("Win: Your defense is just too good for their tired moves.")
+             $("#matchResponse").text("Win: Your defense is just too good for their tired moves.")
             userScoreboard();
-            $("#user_move").text("Lockdown")
-            $("#computer_move").text(computerMove)
+            $("#userMove").text("Lockdown")
+            $("#computerMove").text(computerMove)
         }
         else{
             console.log("draw")
-             $("#match_response").text("Draw: Good defense. Lets go!")
-             $("#user_move").text("Lockdown")
-             $("#computer_move").text(computerMove)
+             $("#matchResponse").text("Draw: Good defense. Lets go!")
+             $("#userMove").text("Lockdown")
+             $("#computerMove").text(computerMove)
         }
     });
     // Steal
@@ -383,16 +383,16 @@ function gameScript2() {
         
         if(compMove == offVal[0]){
             console.log("lose");
-             $("#match_response").text("Lose: You made the wrong read. No worries, keep going!")
-             $("#user_move").text("Steal")
-             $("#computer_move").text(computerMove)
+             $("#matchResponse").text("Lose: You made the wrong read. No worries, keep going!")
+             $("#userMove").text("Steal")
+             $("#computerMove").text(computerMove)
             computeScoreboard();
         }
         else{
             console.log("win")
-             $("#match_response").text("Win: Good eye. Even better defense!")
-             $("#user_move").text("Steal")
-             $("#computer_move").text(computerMove)
+             $("#matchResponse").text("Win: Good eye. Even better defense!")
+             $("#userMove").text("Steal")
+             $("#computerMove").text(computerMove)
             toggleswitch();
             userScoreboard();
         }
